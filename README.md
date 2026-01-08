@@ -51,14 +51,13 @@ Each project is self-contained and easy to run in the browser.
 1. Clone the repository
    ```bash
    git clone https://github.com/your-username/repo-name.git
-````
 
 2. Open any project folder
 3. Run `index.html` in your browser
 
 No setup required 🚀
 
----
+
 
 ## 🌱 Learning Outcomes
 
@@ -67,7 +66,7 @@ No setup required 🚀
 * Core JavaScript logic and DOM manipulation
 * Improved problem-solving skills
 
----
+
 
 ## 🤝 Contributing
 
@@ -78,27 +77,16 @@ Contributions are welcome!
 * Add improvements or new projects
 * Submit a pull request
 
----
+
 
 ## 📜 License
 
 This project is open-source and available under the **MIT License**.
 
----
+
 
 ### ⭐ If you find this helpful, don’t forget to star the repository!
 
 Happy Coding 💻✨
 
-```
 
----
-
-If you want, I can also:
-- Customize it with **your name & GitHub username**
-- Add a **project list with links**
-- Make it **resume / portfolio optimized**
-- Add **screenshots & badges**
-
-Just tell me what you want next 👍
-```
