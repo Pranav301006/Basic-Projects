@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css" />
+    <title>Weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Weather</h1>
+            <!-- graph  -->
+            <div class="sidebar-chart">
+                <svg viewBox="0 0 200 100" class="spline-chart">
+                    <!-- Area under the curve -->
+                    <path d="M 0 80 Q 50 40, 100 60 Q 150 20, 200 30 L 200 100 L 0 100 Z" class="area"></path>
+                    <!-- Curved line -->
+                    <path d="M 0 80 Q 50 40, 100 60 Q 150 20, 200 30" class="line"></path>
+                    <!-- Point indicator -->
+                    <circle cx="150" cy="20" r="3" class="point"></circle>
+                </svg>
+                <div class="status-label">Dangerous</div>
+            </div>
+            <div class="world map">
+                <img src="PcDOE_5PSyq9zg4PtogIyg.webp" style="width: 198px; height: 198px;">
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 10px; border-radius: 10px;">
+                Bhopal, Madhya Pradesh, India
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="main content">
+        <div class="header">
+            <div class="location"></div>        
+            <span>Bhopal,Madhya Pradesh ,India  </span>
+            <span>( November,11,2024 Sunday )</span>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.GORaWHfEThZTo5FJv025nQHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" type="image/png">
+   
+    <style>
+        :root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #ffffff;
+    --accent-color: #3498db;
+    --text-color: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.1);
+}
+.header-title-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-title-logo img {
+    margin-right: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    background-image: url(I5H6rjokT1WPXguhbvNFVA.jpg);
+    background-size: cover;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.download-btn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #2980b9;
+}
+
+.current-weather {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.location h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.temperature {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.description {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.high-low {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.forecast, .recent-searches {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.forecast-list {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
+.forecast-item {
+    text-align: center;
+    min-width: 60px;
+}
+
+.forecast-item .day {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.forecast-item .temp {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.search-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.search-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.search-card:hover {
+    transform: translateY(-5px);
+}
+
+.search-temp {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.search-location {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.search-condition {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .current-weather {
+        padding: 1.5rem;
+    }
+
+    .temperature {
+        font-size: 3rem;
+    }
+
+    .forecast-list {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .forecast-item {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather</h1>
+            <button class="download-btn">Download App</button>
+        </header>
+        
+        <main>
+            <section class="current-weather">
+                <div class="location">
+                    <h2>Bhopal,Madhya Pradesh</h2>
+                    <p>Saturday, 16 November 2024</p>
+                </div>
+                <div class="weather-info">
+                    <div class="temperature">18°</div>
+                    <div class="description">Stormy with partly cloudy</div>
+                </div>
+                <div class="high-low">
+                    <span>H: 29°</span>
+                    <span>L: 12°</span>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>7-Day Forecast</h3>
+                <div class="forecast-list">
+                    <div class="forecast-item">
+                        <div class="day">Sun</div>
+                        <div class="temp">28°</div>
+                    </div>
+                    <div class="forecast-item">
+                        <div class="day">Mon</div>
+                        <div class="temp">26°</div>
+                    </div>
+                    <div class="forecast-item">
+                        <div class="day">Tue</div>
+                        <div class="temp">27°</div>
+                    </div>
+                    <div class="forecast-item">
+                        <div class="day">Wed</div>
+                        <div class="temp">23°</div>
+                    </div>
+                    <div class="forecast-item">
+                        <div class="day">Thu</div>
+                        <div class="temp">30°</div>
+                    </div>
+                    <div class="forecast-item">
+                        <div class="day">Fri</div>
+                        <div class="temp">25°</div>
+                    </div>
+                    <div class="forecast-item">
+                        <div class="day">Sat</div>
+                        <div class="temp">26°</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recent-searches">
+                <h3>Recently Searched</h3>
+                <div class="search-cards">
+                    <div class="search-card">
+                        <div class="search-temp">30°</div>
+                        <div class="search-location">Ujjain,Madhya Pradesh</div>
+                        <div class="search-condition">Partly Cloudy</div>
+                    </div>
+                    <div class="search-card">
+                        <div class="search-temp">32°</div>
+                        <div class="search-location">Indore,Madhya Pradesh</div>
+                        <div class="search-condition">Sunny</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

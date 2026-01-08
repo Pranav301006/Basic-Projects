@@ -1,0 +1,196 @@
+
+
+body {
+    background: #1a1a1a;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+}
+
+.sidebar {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.temperature {
+    font-size: 120px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.high-low {
+    display: flex;
+    gap: 20px;
+}
+
+.temp-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+
+.status {
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 20px 0;
+}
+
+.forecast {
+    margin-top: 40px;
+    position: relative;
+    height: 200px;
+}
+
+.spline-graph {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.spline-line {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to right,
+        transparent 0%, rgba(255, 255, 255, 0.2) 10%,
+        rgba(255, 255, 255, 0.2) 20%, transparent 30%,
+        transparent 40%, rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 60%, transparent 70%,
+        transparent 80%, rgba(255, 255, 255, 0.2) 90%,
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    clip-path: polygon(
+        0% 100%, 16.6% 60%, 33.2% 80%, 49.8% 20%,
+        66.4% 100%, 83% 40%, 100% 60%, 100% 100%
+    );
+}
+
+.day {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.day-temp {
+    font-size: 18px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.temp-point {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.day-name {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.status-graph {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.danger-label {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.world-map {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.recent-searches-section {
+    margin-top: 40px;
+}
+
+.recent-searches-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recent-searches {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.search-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.search-temp {
+    font-size: 24px;
+}
+
+.search-condition {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.location-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
